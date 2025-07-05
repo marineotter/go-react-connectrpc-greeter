@@ -1,0 +1,18 @@
+# 開発環境
+.devcontainer/
+.vscode/
+
+# ビルド成果物
+/backend/backend-app
+/frontend/build/
+/frontend/node_modules/
+
+# 一時ファイル
+*.log
+*.tmp
+.DS_Store
+
+# 環境変数ファイル
+.env
+.env.local
+.env.*.local
