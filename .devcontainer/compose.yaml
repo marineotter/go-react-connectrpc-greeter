@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: app
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    init: true
+    command: sleep infinity

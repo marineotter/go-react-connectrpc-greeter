@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package greeter.v1;
+
+option go_package = "backend/gen/greeter/v1;greeterv1";
+
+// Request message for greeting
+message GreetRequest {
+  string name = 1;
+}
+
+// Response message for greeting
+message GreetResponse {
+  string message = 1;
+}
+
+// Service definition
+service GreeterService {
+  rpc Greet(GreetRequest) returns (GreetResponse);
+}
